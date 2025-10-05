@@ -1,0 +1,52 @@
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+    <ul>
+        <!-- Each list item contains a navigation link -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+
+/* NAVBAR STYLING */
+
+/* Main navbar container */
+.navbar {
+    background: linear-gradient(120deg, #89f7fe, #66a6ff); /* Gradient background */
+    padding: 15px 0;         /* Top and bottom padding */
+    text-align: center;      /* Center the content */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+    border-radius: 8px;      /* Rounded corners */
+    margin: 10px;            /* Outer spacing from other elements */
+}
+
+/* Remove default list styling and arrange links horizontally */
+.navbar ul {
+    list-style: none;        /* Remove bullets */
+    margin: 0;               /* Remove default margin */
+    padding: 0;              /* Remove default padding */
+    display: flex;           /* Arrange items in a row */
+    justify-content: center; /* Center horizontally */
+    gap: 30px;               /* Space between links */
+}
+
+/* Styling for each link */
+.navbar ul li a {
+    text-decoration: none;   /* Remove underline */
+    color: #fff;             /* White text */
+    font-weight: bold;       /* Bold font */
+    font-size: 1.1rem;       /* Slightly larger font */
+    padding: 8px 12px;       /* Spacing inside the link */
+    border-radius: 5px;      /* Rounded corners for hover effect */
+    transition: background 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+.navbar ul li a:hover {
+    background: #fff;        /* White background on hover */
+    color: #66a6ff;          /* Text turns blue on hover */
+}
