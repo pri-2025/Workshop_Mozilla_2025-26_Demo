@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
